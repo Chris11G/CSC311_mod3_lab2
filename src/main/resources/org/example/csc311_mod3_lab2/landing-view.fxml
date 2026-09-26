@@ -3,6 +3,9 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.StackPane?>
@@ -16,25 +19,78 @@
             styleClass="landing-root">
 
     <top>
-        <HBox alignment="CENTER_LEFT"
-              spacing="20"
-              styleClass="top-bar">
+        <VBox>
+
+            <MenuBar styleClass="menu-bar-custom">
+
+                <Menu text="File">
+                    <MenuItem text="New"/>
+                    <MenuItem text="Open"/>
+                    <MenuItem text="Exit"/>
+                </Menu>
+
+                <Menu text="Edit">
+                    <MenuItem text="Copy"/>
+                    <MenuItem text="Paste"/>
+                </Menu>
+
+                <Menu text="Help">
+                    <MenuItem text="About"/>
+                </Menu>
+
+            </MenuBar>
+
+            <HBox alignment="CENTER_LEFT"
+                  spacing="20"
+                  styleClass="top-bar">
+
+                <padding>
+                    <Insets top="12"
+                            right="25"
+                            bottom="12"
+                            left="25"/>
+                </padding>
+
+                <Label text="CSC311 App"
+                       styleClass="app-title"/>
+
+                <Label text="Home"
+                       styleClass="nav-text"/>
+
+            </HBox>
+
+        </VBox>
+    </top>
+
+    <left>
+        <VBox spacing="15"
+              prefWidth="150"
+              styleClass="side-panel">
 
             <padding>
-                <Insets top="15"
-                        right="25"
-                        bottom="15"
-                        left="25"/>
+                <Insets top="25"
+                        right="15"
+                        bottom="25"
+                        left="15"/>
             </padding>
 
-            <Label text="CSC311 App"
-                   styleClass="app-title"/>
+            <Label text="Menu"
+                   styleClass="side-title"/>
 
-            <Label text="Home"
-                   styleClass="nav-text"/>
+            <Button text="Home"
+                    maxWidth="Infinity"
+                    styleClass="side-button"/>
 
-        </HBox>
-    </top>
+            <Button text="Profile"
+                    maxWidth="Infinity"
+                    styleClass="side-button"/>
+
+            <Button text="Settings"
+                    maxWidth="Infinity"
+                    styleClass="side-button"/>
+
+        </VBox>
+    </left>
 
     <center>
         <StackPane>

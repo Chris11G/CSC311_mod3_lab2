@@ -203,3 +203,39 @@
     -fx-text-fill: #777777;
     -fx-padding: 0 0 5px 0;
 }
+
+/* ---------------- MENU BAR ---------------- */
+
+.menu-bar-custom {
+    -fx-background-color: #e0e0e0;
+}
+
+.menu-bar-custom .label {
+    -fx-text-fill: #222222;
+    -fx-font-size: 13px;
+}
+
+/* ---------------- SIDE PANEL ---------------- */
+
+.side-panel {
+    -fx-background-color: rgba(230, 230, 230, 0.95);
+}
+
+.side-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f4e79;
+}
+
+.side-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #333333;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.side-button:hover {
+    -fx-background-color: #d6e4f0;
+}
