@@ -5,6 +5,7 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
 <BorderPane xmlns="http://javafx.com/javafx"
@@ -36,24 +37,36 @@
     </top>
 
     <center>
-        <VBox alignment="CENTER"
-              spacing="18"
-              styleClass="landing-content">
+        <StackPane>
 
-            <Label text="Welcome!"
-                   styleClass="landing-title"/>
+            <VBox alignment="CENTER"
+                  spacing="18"
+                  maxWidth="430"
+                  styleClass="landing-card">
 
-            <Label text="You have successfully logged in."
-                   styleClass="landing-text"/>
+                <padding>
+                    <Insets top="35"
+                            right="45"
+                            bottom="35"
+                            left="45"/>
+                </padding>
 
-            <Label text="This is your main landing screen."
-                   styleClass="landing-text"/>
+                <Label text="Welcome!"
+                       styleClass="landing-title"/>
 
-            <Button text="Get Started"
-                    styleClass="primary-button"
-                    maxWidth="220"/>
+                <Label text="You have successfully logged in."
+                       styleClass="landing-text"/>
 
-        </VBox>
+                <Label text="This is your main landing screen."
+                       styleClass="landing-text"/>
+
+                <Button text="Get Started"
+                        maxWidth="220"
+                        styleClass="primary-button"/>
+
+            </VBox>
+
+        </StackPane>
     </center>
 
 </BorderPane>

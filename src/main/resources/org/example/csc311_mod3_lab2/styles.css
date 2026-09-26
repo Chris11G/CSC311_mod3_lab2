@@ -123,11 +123,14 @@
 /* ---------------- LANDING SCREEN ---------------- */
 
 .landing-root {
-    -fx-background-color: #f4f6f8;
+    -fx-background-image: url("images/campus.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 
 .top-bar {
-    -fx-background-color: #1f4e79;
+    -fx-background-color: rgba(31, 78, 121, 0.95);
 }
 
 .app-title {
@@ -141,8 +144,18 @@
     -fx-text-fill: white;
 }
 
-.landing-content {
-    -fx-padding: 40px;
+.landing-card {
+    -fx-background-color: rgba(255, 255, 255, 0.92);
+    -fx-background-radius: 18px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0, 0, 0, 0.30),
+            15,
+            0.2,
+            0,
+            5
+    );
 }
 
 .landing-title {
@@ -153,7 +166,7 @@
 
 .landing-text {
     -fx-font-size: 16px;
-    -fx-text-fill: #555555;
+    -fx-text-fill: #444444;
 }
 
 /* ---------------- REGISTER SCREEN ---------------- */
