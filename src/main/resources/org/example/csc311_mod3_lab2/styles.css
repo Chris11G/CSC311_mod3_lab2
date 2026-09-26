@@ -8,33 +8,33 @@
 }
 
 .splash-card {
-    -fx-background-color: rgba(0, 0, 0, 0.60);
+    -fx-background-color: rgba(255, 255, 255, 0.92);
     -fx-background-radius: 18px;
 
     -fx-effect: dropshadow(
             gaussian,
-            rgba(0, 0, 0, 0.35),
+            rgba(0, 0, 0, 0.30),
             15,
             0.2,
             0,
-            4
+            5
     );
 }
 
 .splash-title {
     -fx-font-size: 38px;
     -fx-font-weight: bold;
-    -fx-text-fill: white;
+    -fx-text-fill: #1f4e79;
 }
 
 .splash-subtitle {
     -fx-font-size: 20px;
-    -fx-text-fill: white;
+    -fx-text-fill: #444444;
 }
 
 .splash-loading {
     -fx-font-size: 14px;
-    -fx-text-fill: #dddddd;
+    -fx-text-fill: #777777;
 }
 
 /* ---------------- LOGIN SCREEN ---------------- */
