@@ -5,36 +5,55 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.csc311_mod3_lab2.LoginController"
-      alignment="CENTER"
-      spacing="15"
-      prefWidth="600"
-      prefHeight="400"
-      styleClass="login-root">
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.example.csc311_mod3_lab2.LoginController"
+           prefWidth="800"
+           prefHeight="500"
+           styleClass="login-root">
 
-    <padding>
-        <Insets top="30" right="80" bottom="30" left="80"/>
-    </padding>
+    <VBox alignment="CENTER"
+          spacing="15"
+          maxWidth="350"
+          styleClass="login-card">
 
-    <Label text="Login"
-           styleClass="login-title"/>
+        <padding>
+            <Insets top="35"
+                    right="40"
+                    bottom="35"
+                    left="40"/>
+        </padding>
 
-    <TextField promptText="Username"
-               maxWidth="250"/>
+        <Label text="Welcome Back"
+               styleClass="login-title"/>
 
-    <PasswordField promptText="Password"
-                   maxWidth="250"/>
+        <Label text="Sign in to continue"
+               styleClass="login-subtitle"/>
 
-    <Button text="Login"
-            maxWidth="250"
-            onAction="#handleLogin"/>
+        <TextField promptText="Username"
+                   maxWidth="300"
+                   styleClass="input-field"/>
 
-    <Button text="Register"
-            maxWidth="250"
-            onAction="#handleRegister"/>
+        <PasswordField promptText="Password"
+                       maxWidth="300"
+                       styleClass="input-field"/>
 
-</VBox>
+        <Button text="Login"
+                maxWidth="300"
+                onAction="#handleLogin"
+                styleClass="primary-button"/>
+
+        <Label text="Don't have an account?"
+               styleClass="small-text"/>
+
+        <Button text="Create Account"
+                maxWidth="300"
+                onAction="#handleRegister"
+                styleClass="secondary-button"/>
+
+    </VBox>
+
+</StackPane>

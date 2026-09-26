@@ -31,8 +31,7 @@ public class SplashController {
                         );
 
                 Scene scene =
-                        new Scene(loader.load(), 600, 400);
-
+                        new Scene(loader.load(), 800, 500);
                 scene.getStylesheets().add(
                         getClass()
                                 .getResource("styles.css")

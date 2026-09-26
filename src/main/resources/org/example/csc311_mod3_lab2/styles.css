@@ -13,28 +13,91 @@
     -fx-text-fill: white;
 }
 
+/* ---------------- LOGIN SCREEN ---------------- */
+
 .login-root {
-    -fx-background-color: #f4f6f8;
+    -fx-background-color: linear-gradient(
+            to bottom right,
+            #163b65,
+            #2f75b5
+    );
+}
+
+.login-card {
+    -fx-background-color: white;
+    -fx-background-radius: 15px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0, 0, 0, 0.25),
+            15,
+            0.2,
+            0,
+            5
+    );
 }
 
 .login-title {
-    -fx-font-size: 30px;
+    -fx-font-size: 32px;
     -fx-font-weight: bold;
     -fx-text-fill: #1f4e79;
 }
 
-.text-field,
-.password-field {
+.login-subtitle {
     -fx-font-size: 14px;
-    -fx-padding: 10px;
+    -fx-text-fill: #777777;
+    -fx-padding: 0 0 10px 0;
 }
 
-.button {
+.input-field {
     -fx-font-size: 14px;
-    -fx-padding: 10px;
-    -fx-background-radius: 6px;
+    -fx-background-color: #f4f6f8;
+    -fx-background-radius: 8px;
+    -fx-border-color: #d8dde3;
+    -fx-border-radius: 8px;
+    -fx-padding: 12px;
+}
+
+.input-field:focused {
+    -fx-border-color: #2f75b5;
+    -fx-border-width: 2px;
+}
+
+.primary-button {
+    -fx-background-color: #1f4e79;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px;
     -fx-cursor: hand;
 }
+
+.primary-button:hover {
+    -fx-background-color: #163b65;
+}
+
+.secondary-button {
+    -fx-background-color: transparent;
+    -fx-border-color: #1f4e79;
+    -fx-border-width: 1.5px;
+    -fx-border-radius: 8px;
+    -fx-text-fill: #1f4e79;
+    -fx-font-weight: bold;
+    -fx-padding: 10px;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #eaf2f8;
+}
+
+.small-text {
+    -fx-font-size: 12px;
+    -fx-text-fill: #777777;
+}
+
+/* ---------------- LANDING SCREEN ---------------- */
 
 .landing-root {
     -fx-background-color: #f4f6f8;
@@ -50,6 +113,8 @@
     -fx-font-size: 16px;
     -fx-text-fill: #444444;
 }
+
+/* ---------------- REGISTER SCREEN ---------------- */
 
 .register-root {
     -fx-background-color: #f4f6f8;
