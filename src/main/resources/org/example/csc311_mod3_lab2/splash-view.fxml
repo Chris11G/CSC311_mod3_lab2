@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.example.csc311_mod3_lab2.SplashController"
+      fx:id="splashRoot"
+      alignment="CENTER"
+      spacing="15"
+      prefWidth="600"
+      prefHeight="400"
+      styleClass="splash-root">
+
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <Label text="CSC311 App"
+           styleClass="splash-title"/>
+
+    <Label text="Loading..."
+           styleClass="splash-subtitle"/>
+
+</VBox>
