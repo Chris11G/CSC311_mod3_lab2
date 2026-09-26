@@ -103,15 +103,34 @@
     -fx-background-color: #f4f6f8;
 }
 
+.top-bar {
+    -fx-background-color: #1f4e79;
+}
+
+.app-title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.nav-text {
+    -fx-font-size: 14px;
+    -fx-text-fill: white;
+}
+
+.landing-content {
+    -fx-padding: 40px;
+}
+
 .landing-title {
-    -fx-font-size: 32px;
+    -fx-font-size: 34px;
     -fx-font-weight: bold;
     -fx-text-fill: #1f4e79;
 }
 
 .landing-text {
     -fx-font-size: 16px;
-    -fx-text-fill: #444444;
+    -fx-text-fill: #555555;
 }
 
 /* ---------------- REGISTER SCREEN ---------------- */
