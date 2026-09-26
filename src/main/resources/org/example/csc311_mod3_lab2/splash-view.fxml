@@ -2,26 +2,38 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.csc311_mod3_lab2.SplashController"
-      fx:id="splashRoot"
-      alignment="CENTER"
-      spacing="15"
-      prefWidth="600"
-      prefHeight="400"
-      styleClass="splash-root">
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.example.csc311_mod3_lab2.SplashController"
+           fx:id="splashRoot"
+           prefWidth="800"
+           prefHeight="500"
+           styleClass="splash-root">
 
-    <padding>
-        <Insets top="20" right="20" bottom="20" left="20"/>
-    </padding>
+    <VBox alignment="CENTER"
+          spacing="12"
+          maxWidth="420"
+          styleClass="splash-card">
 
-    <Label text="CSC311 App"
-           styleClass="splash-title"/>
+        <padding>
+            <Insets top="30"
+                    right="40"
+                    bottom="30"
+                    left="40"/>
+        </padding>
 
-    <Label text="Loading..."
-           styleClass="splash-subtitle"/>
+        <Label text="CSC311 App"
+               styleClass="splash-title"/>
 
-</VBox>
+        <Label text="Welcome"
+               styleClass="splash-subtitle"/>
+
+        <Label text="Loading..."
+               styleClass="splash-loading"/>
+
+    </VBox>
+
+</StackPane>

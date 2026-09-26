@@ -1,3 +1,5 @@
+/* ---------------- SPLASH SCREEN ---------------- */
+
 .splash-root {
     -fx-background-image: url("images/campus.jpg");
     -fx-background-size: cover;
@@ -5,15 +7,34 @@
     -fx-background-repeat: no-repeat;
 }
 
+.splash-card {
+    -fx-background-color: rgba(0, 0, 0, 0.60);
+    -fx-background-radius: 18px;
+
+    -fx-effect: dropshadow(
+            gaussian,
+            rgba(0, 0, 0, 0.35),
+            15,
+            0.2,
+            0,
+            4
+    );
+}
+
 .splash-title {
-    -fx-font-size: 36px;
+    -fx-font-size: 38px;
     -fx-font-weight: bold;
     -fx-text-fill: white;
 }
 
 .splash-subtitle {
-    -fx-font-size: 16px;
+    -fx-font-size: 20px;
     -fx-text-fill: white;
+}
+
+.splash-loading {
+    -fx-font-size: 14px;
+    -fx-text-fill: #dddddd;
 }
 
 /* ---------------- LOGIN SCREEN ---------------- */

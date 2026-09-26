@@ -4,7 +4,7 @@ import javafx.animation.PauseTransition;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
@@ -13,7 +13,7 @@ import java.io.IOException;
 public class SplashController {
 
     @FXML
-    private VBox splashRoot;
+    private StackPane splashRoot;
 
     @FXML
     public void initialize() {
@@ -24,7 +24,6 @@ public class SplashController {
 
         pause.setOnFinished(event -> {
             try {
-
                 FXMLLoader loader =
                         new FXMLLoader(
                                 getClass().getResource("login-view.fxml")
@@ -32,6 +31,7 @@ public class SplashController {
 
                 Scene scene =
                         new Scene(loader.load(), 800, 500);
+
                 scene.getStylesheets().add(
                         getClass()
                                 .getResource("styles.css")
