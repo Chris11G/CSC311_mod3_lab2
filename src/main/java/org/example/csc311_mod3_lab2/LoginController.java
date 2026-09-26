@@ -43,4 +43,37 @@ public class LoginController {
             e.printStackTrace();
         }
     }
+
+    @FXML
+    private void handleRegister(ActionEvent event) {
+
+        try {
+            // Load the registration screen.
+            FXMLLoader loader =
+                    new FXMLLoader(
+                            getClass().getResource("register-view.fxml")
+                    );
+
+            Scene scene = new Scene(loader.load(), 600, 400);
+
+            // Apply CSS styling.
+            scene.getStylesheets().add(
+                    getClass()
+                            .getResource("styles.css")
+                            .toExternalForm()
+            );
+
+            // Get the current window.
+            Stage stage =
+                    (Stage) ((Node) event.getSource())
+                            .getScene()
+                            .getWindow();
+
+            // Change to the registration screen.
+            stage.setScene(scene);
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 }

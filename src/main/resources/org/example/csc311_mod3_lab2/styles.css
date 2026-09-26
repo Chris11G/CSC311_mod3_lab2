@@ -50,3 +50,13 @@
     -fx-font-size: 16px;
     -fx-text-fill: #444444;
 }
+
+.register-root {
+    -fx-background-color: #f4f6f8;
+}
+
+.register-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #1f4e79;
+}
