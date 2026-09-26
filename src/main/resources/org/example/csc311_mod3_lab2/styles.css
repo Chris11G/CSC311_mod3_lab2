@@ -1,5 +1,8 @@
 .splash-root {
-    -fx-background-color: linear-gradient(to bottom right, #1f4e79, #4f81bd);
+    -fx-background-image: url("images/campus.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 
 .splash-title {
@@ -16,11 +19,10 @@
 /* ---------------- LOGIN SCREEN ---------------- */
 
 .login-root {
-    -fx-background-color: linear-gradient(
-            to bottom right,
-            #163b65,
-            #2f75b5
-    );
+    -fx-background-image: url("images/campus.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 
 .login-card {
@@ -136,11 +138,10 @@
 /* ---------------- REGISTER SCREEN ---------------- */
 
 .register-root {
-    -fx-background-color: linear-gradient(
-            to bottom right,
-            #163b65,
-            #2f75b5
-    );
+    -fx-background-image: url("images/campus.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center;
+    -fx-background-repeat: no-repeat;
 }
 
 .register-card {
