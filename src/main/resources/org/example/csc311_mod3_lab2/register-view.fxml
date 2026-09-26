@@ -5,41 +5,62 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<VBox xmlns="http://javafx.com/javafx"
-      xmlns:fx="http://javafx.com/fxml"
-      fx:controller="org.example.csc311_mod3_lab2.RegisterController"
-      alignment="CENTER"
-      spacing="15"
-      prefWidth="600"
-      prefHeight="400"
-      styleClass="register-root">
+<StackPane xmlns="http://javafx.com/javafx"
+           xmlns:fx="http://javafx.com/fxml"
+           fx:controller="org.example.csc311_mod3_lab2.RegisterController"
+           prefWidth="800"
+           prefHeight="500"
+           styleClass="register-root">
 
-    <padding>
-        <Insets top="30" right="80" bottom="30" left="80"/>
-    </padding>
+    <VBox alignment="CENTER"
+          spacing="15"
+          maxWidth="350"
+          styleClass="register-card">
 
-    <Label text="Create Account"
-           styleClass="register-title"/>
+        <padding>
+            <Insets top="30"
+                    right="40"
+                    bottom="30"
+                    left="40"/>
+        </padding>
 
-    <TextField promptText="Username"
-               maxWidth="250"/>
+        <Label text="Create Account"
+               styleClass="register-title"/>
 
-    <TextField promptText="Email"
-               maxWidth="250"/>
+        <Label text="Fill out the information below"
+               styleClass="register-subtitle"/>
 
-    <PasswordField promptText="Password"
-                   maxWidth="250"/>
+        <TextField promptText="Username"
+                   maxWidth="300"
+                   styleClass="input-field"/>
 
-    <PasswordField promptText="Confirm Password"
-                   maxWidth="250"/>
+        <TextField promptText="Email"
+                   maxWidth="300"
+                   styleClass="input-field"/>
 
-    <Button text="Register"
-            maxWidth="250"/>
+        <PasswordField promptText="Password"
+                       maxWidth="300"
+                       styleClass="input-field"/>
 
-    <Button text="Back to Login"
-            maxWidth="250"
-            onAction="#handleBackToLogin"/>
+        <PasswordField promptText="Confirm Password"
+                       maxWidth="300"
+                       styleClass="input-field"/>
 
-</VBox>
+        <Button text="Register"
+                maxWidth="300"
+                styleClass="primary-button"/>
+
+        <Label text="Already have an account?"
+               styleClass="small-text"/>
+
+        <Button text="Back to Login"
+                maxWidth="300"
+                onAction="#handleBackToLogin"
+                styleClass="secondary-button"/>
+
+    </VBox>
+
+</StackPane>
