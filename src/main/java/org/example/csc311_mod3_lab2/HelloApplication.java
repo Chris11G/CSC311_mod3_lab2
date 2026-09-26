@@ -15,7 +15,7 @@ public class HelloApplication extends Application {
         FXMLLoader fxmlLoader =
                 new FXMLLoader(HelloApplication.class.getResource("splash-view.fxml"));
 
-        Scene scene = new Scene(fxmlLoader.load(), 800, 500);
+        Scene scene = new Scene(fxmlLoader.load());
 
         scene.getStylesheets().add(
                 HelloApplication.class.getResource("styles.css").toExternalForm()
@@ -23,6 +23,7 @@ public class HelloApplication extends Application {
 
         stage.setTitle("CSC311 Module 2 Lab 2");
         stage.setScene(scene);
+        stage.setResizable(true);
         stage.show();
     }
 

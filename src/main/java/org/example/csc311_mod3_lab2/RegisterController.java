@@ -21,7 +21,7 @@ public class RegisterController {
                             getClass().getResource("login-view.fxml")
                     );
 
-            Scene scene = new Scene(loader.load(), 800, 500);
+            Scene scene = new Scene(loader.load());
 
             // Apply CSS styling.
             scene.getStylesheets().add(
