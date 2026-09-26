@@ -9,21 +9,21 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-public class RegisterController {
+public class LoginController {
 
     @FXML
-    private void handleBackToLogin(ActionEvent event) {
-
+    private void handleLogin(ActionEvent event) {
         try {
-            // Load the login screen.
+
+            // Load the landing screen.
             FXMLLoader loader =
                     new FXMLLoader(
-                            getClass().getResource("login-view.fxml")
+                            getClass().getResource("landing-view.fxml")
                     );
 
             Scene scene = new Scene(loader.load(), 600, 400);
 
-            // Apply CSS styling.
+            // Apply our CSS styling.
             scene.getStylesheets().add(
                     getClass()
                             .getResource("styles.css")
@@ -36,7 +36,7 @@ public class RegisterController {
                             .getScene()
                             .getWindow();
 
-            // Change back to the login screen.
+            // Change the screen to the landing screen.
             stage.setScene(scene);
 
         } catch (IOException e) {
